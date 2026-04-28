@@ -6,18 +6,18 @@
 
 #after 10 seconds kettle will be boiled
 
-# import time
-# def countdown(seconds):
-#     while seconds > 0:
-#         print(f"Boiling in {seconds} seconds...")
-#         time.sleep(1) #Delay execution for a given number of seconds.
-#         seconds -= 1
-#     print("The kettle is boiled!")
-# countdown(10)
+import time
+def countdown(seconds):
+    while seconds > 0:
+        print(f"Boiling in {seconds} seconds...")
+        time.sleep(1) #Delay execution for a given number of seconds.
+        seconds -= 1
+    print("The kettle is boiled!")
+countdown(10)
 
-# snack_input=input("What snack do you want?").lower()
-# if(snack_input=="cookies" or snack_input=="samosa"):
-#     print("Order confirmed")
-# else:
-#     print("Sorry, we don't have that snack.")
+snack_input=input("What snack do you want?").lower()
+if(snack_input=="cookies" or snack_input=="samosa"):
+    print("Order confirmed")
+else:
+    print("Sorry, we don't have that snack.")
 

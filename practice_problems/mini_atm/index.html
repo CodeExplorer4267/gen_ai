@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini ATM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="atm-container">
+    <h2>Mini ATM System</h2>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <div class="buttons">
+        <button onclick="createAccount()">Create Account</button>
+        <button onclick="checkBalance()">Check Balance</button>
+    </div>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <div class="buttons">
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <p id="output"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
