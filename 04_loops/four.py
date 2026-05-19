@@ -14,11 +14,20 @@
 import random 
 print("------Please sign up first--------")
 isGivepass=False
-name=input("Please enter your name !!")
-passoword=input("Enter your password:")
+name=input("Please enter your name : ")
+password=input("Enter your password:")
+isGivepass=True
+print("---------Now Login please-----------")
+while isGivepass:
+    enter_pass=input("Please enter your password")
+    if(enter_pass != password):
+        print("Your password is wrong!!")
+    else:
+        isGivepass=False
 
 print(f"---------------Welcome {name} to the number guessing game------------------")
 actualNum=random.randint(1,100)
+score=0
 guessedNum=int(input("Enter a number:"))
 while guessedNum != actualNum :
     if guessedNum > actualNum : 
@@ -27,6 +36,10 @@ while guessedNum != actualNum :
         guessedNum=int(input("Try Bigger bigger"))
     else:
         break
+    score=score+1
+
+print(f"You found the number !! Your score - {10-score}/10")
+
 
 
 
