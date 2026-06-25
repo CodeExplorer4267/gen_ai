@@ -30,7 +30,7 @@
 # a="hello"
 # def func1():
 #     def func2():
-#         # global a #it can access the global a 
+#         global a #it can access the global a 
 #         nonlocal a #No binding for nonlocal "a" foundPylance 
 #         a="hey"
     
