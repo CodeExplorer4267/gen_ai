@@ -1,4 +1,4 @@
-#function er moddhe string e chagneg korle original string chnage hoy na
+# function er moddhe string e chagneg korle original string chnage hoy na
 # a="hey"
 # def function(str):
 #     print(str+"hello")
@@ -6,7 +6,7 @@
 # function(a)
 # print(a)
 
-#if we use list -> it is mutable so function e list change korle original list o change hy
+# if we use list -> it is mutable so function e list change korle original list o change hy
 # a=[1,2,3,4]
 # def update(list):
 #     list.append(94)
