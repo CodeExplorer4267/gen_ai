@@ -4,6 +4,7 @@ class OutofIngredientsError(Exception):
     pass
 
 def calculate(item,quantity,menu):
+    cost=0
     try:
         if item not in menu:
             raise OutofIngredientsError("Item is not available")
@@ -40,9 +41,15 @@ menu={
 }
 total_bill=0
 while not order_done:
-    item=input("Please enter your order!")
+    item=input()
     quan=int(input("Enter the quantity"))
     total_bill=total_bill+calculate(item,quan,menu)
+    finish=input("DO you want anything more?")
+    if(finish=="no"):
+        order_done=True
+    else:
+        order_done=False
+print(f"Your total bill : {total_bill}")
     
 
 
